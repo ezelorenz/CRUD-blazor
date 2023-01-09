@@ -15,6 +15,11 @@ builder.Services.AddDbContext<CrudblazorContext>(opt =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var misReglasCors = "ReglasCors";
+builder.Services.AddCors(opt =>
+        opt.AddPolicy(name: misReglasCors, builder =>
+            builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,6 +30,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(misReglasCors);
 
 app.UseAuthorization();
 
