@@ -1,4 +1,6 @@
 using BlazorCrud.API.Context;
+using BlazorCrud.API.Repositorio.Implementaciones;
+using BlazorCrud.API.Repositorio.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +21,11 @@ var misReglasCors = "ReglasCors";
 builder.Services.AddCors(opt =>
         opt.AddPolicy(name: misReglasCors, builder =>
             builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+
+builder.Services.AddScoped<IProductoRepositorio, ProductoRepositorio>();
+
+
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
