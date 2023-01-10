@@ -15,6 +15,14 @@ namespace BlazorCrud.API.Extensiones
             CreateMap<ProductoDto, Producto>()
                 .ForMember(p => p.IdCategoriaNavigation,
                             opt => opt.Ignore());
+
+            CreateMap<Producto, ProductoCreacionDto>()
+                .ForMember(p => p.NombreCategoria,
+                            opt => opt.MapFrom(o => o.IdCategoriaNavigation.Descripcion));
+
+            CreateMap<ProductoCreacionDto, Producto>()
+                .ForMember(p => p.IdCategoriaNavigation,
+                            opt => opt.Ignore());
         }
     }
 }

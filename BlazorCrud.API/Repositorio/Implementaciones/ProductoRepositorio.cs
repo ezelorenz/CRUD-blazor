@@ -12,9 +12,10 @@ namespace BlazorCrud.API.Repositorio.Implementaciones
         {
             db = dataBase;
         }
-        public Task<Producto> GetProducto(int idProducto)
+        public async Task<Producto> GetProducto(int idProducto)
         {
-            throw new NotImplementedException();
+            return await db.Productos
+                            .Include(c => c.IdCategoriaNavigation).FirstOrDefaultAsync(p => p.IdProducto == idProducto);
         }
 
         public async Task<IEnumerable<Producto>> ListaProductos()
@@ -22,19 +23,46 @@ namespace BlazorCrud.API.Repositorio.Implementaciones
             return await db.Productos
                             .Include(c => c.IdCategoriaNavigation).ToListAsync();
         }
-        public Task<Producto> AgregarProducto(Producto producto)
+        public async Task<Producto> AgregarProducto(Producto producto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                db.Productos.Add(producto);
+                await db.SaveChangesAsync();
+                return producto;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
-        public Task<bool> EditarProducto(Producto producto)
+        public async Task<bool> EditarProducto(Producto producto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                db.Productos.Update(producto);
+                await db.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
-        public Task<bool> EliminarProducto(int idProducto)
+        public async Task<bool> EliminarProducto(Producto producto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                db.Productos.Remove(producto);
+                await db.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
     }

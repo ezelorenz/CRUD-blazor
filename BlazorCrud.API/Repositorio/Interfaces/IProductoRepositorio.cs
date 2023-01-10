@@ -8,6 +8,6 @@ namespace BlazorCrud.API.Repositorio.Interfaces
         Task<Producto> GetProducto(int idProducto);
         Task<Producto> AgregarProducto(Producto producto);
         Task<bool> EditarProducto(Producto producto);
-        Task<bool> EliminarProducto(int idProducto);
+        Task<bool> EliminarProducto(Producto producto);
     }
 }
