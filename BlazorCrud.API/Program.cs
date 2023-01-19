@@ -23,6 +23,7 @@ builder.Services.AddCors(opt =>
             builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
 
 builder.Services.AddScoped<IProductoRepositorio, ProductoRepositorio>();
+builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
 
 
 builder.Services.AddAutoMapper(typeof(Program));

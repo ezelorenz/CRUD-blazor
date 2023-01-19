@@ -23,6 +23,8 @@ namespace BlazorCrud.API.Extensiones
             CreateMap<ProductoCreacionDto, Producto>()
                 .ForMember(p => p.IdCategoriaNavigation,
                             opt => opt.Ignore());
+
+            CreateMap<Categoria, CategoriaDto>().ReverseMap();
         }
     }
 }
