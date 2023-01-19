@@ -61,9 +61,29 @@ namespace BlazorCrud.WEB.Services
             }
         }
 
-        public Task<ProductoDto> GetById(int idProducto)
+        public async Task<ProductoDto> GetById(int idProducto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/producto/{idProducto}");
+                if (response.IsSuccessStatusCode)
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+                    {
+                        return default(ProductoDto);
+                    }
+                    return await response.Content.ReadFromJsonAsync<ProductoDto>();
+                }
+                else
+                {
+                    var message = await response.Content.ReadAsStringAsync();
+                    throw new Exception(message);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         

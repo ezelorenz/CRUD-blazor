@@ -23,13 +23,15 @@
 				<td>@item.NombreCategoria</td>
 				<td>@item.Precio</td>
 				<td>
-					<button class="btn btn-sm btn-warning">Editar
-					</button>
-					<button 
+					<a href="@($"/editarProducto/{item.IdProducto}")"
+					   class="btn btn-sm btn-warning">
+							Editar
+					</a>
+					<a 
 						class = "btn btn-sm btn-danger"
-							@onclick=@(() => EliminarProducto(item.IdProducto))>
+						@onclick=@(() => EliminarProducto(item.IdProducto))>
 							Eliminar
-					</button>
+					</a>
 				</td>
 			</tr>
 		}

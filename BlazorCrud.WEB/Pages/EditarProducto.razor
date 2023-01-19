@@ -1,0 +1,48 @@
+﻿@page "/editarProducto/{id}"
+@inherits EditarProductoBase
+
+<EditForm Model="@Producto">
+    <h3>Editar Producto</h3>
+    <hr />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="form-group row mb-2">
+                <label for="marca" class="col-sm-2 col-form-label">
+                    Marca
+                </label>
+                <div class="col-sm-8">
+                    <InputText id="marca" class="form-control" placeholder="Marca"
+                               @bind-Value="Producto.Marca" />
+                </div>
+            </div>
+            <div class="form-group row mb-2">
+                <label for="descripcion" class="col-sm-2 col-form-label">
+                    Descripción
+                </label>
+                <div class="col-sm-8">
+                    <InputText id="descripcion" class="form-control" placeholder="Descripción"
+                               @bind-Value="Producto.Descripcion" />
+                </div>
+            </div>
+            <div class="form-group row mb-2">
+                <label for="precio" class="col-sm-2 col-form-label">
+                    Precio
+                </label>
+                <div class="col-sm-8">
+                    <InputNumber id="precio" class="form-control" placeholder="Precio"
+                               @bind-Value="Producto.Precio" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="categoria" class="col-sm-2 col-form-label">
+                    Categoria
+                </label>
+                <div class="col-sm-8">
+                    @*<InputSelect id="categoria" @bind-Value="" class="form-control">
+                        
+                    </InputSelect>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>

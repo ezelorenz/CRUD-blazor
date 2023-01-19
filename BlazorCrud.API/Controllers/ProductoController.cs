@@ -46,11 +46,11 @@ namespace BlazorCrud.API.Controllers
 
         [HttpGet("{id:int}", Name = "GetProducto")]
 
-        public async Task<ActionResult<ProductoDto>>GetItem(int idProducto)
+        public async Task<ActionResult<ProductoDto>>GetItem(int id)
         {
             try
             {
-                var producto = await _repoProducto.GetProducto(idProducto);
+                var producto = await _repoProducto.GetProducto(id);
                 if (producto == null)
                 {
                     return BadRequest();
