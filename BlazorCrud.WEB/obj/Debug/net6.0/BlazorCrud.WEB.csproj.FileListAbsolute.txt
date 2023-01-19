@@ -813,3 +813,11 @@ D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\obj\Debug\net6.0\BlazorCrud.WEB.dl
 D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\obj\Debug\net6.0\refint\BlazorCrud.WEB.dll
 D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\obj\Debug\net6.0\BlazorCrud.WEB.pdb
 D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\obj\Debug\net6.0\ref\BlazorCrud.WEB.dll
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\bin\Debug\net6.0\wwwroot\_framework\BlazorCrud.Models.dll
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\bin\Debug\net6.0\wwwroot\_framework\BlazorCrud.Models.pdb
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\bin\Debug\net6.0\wwwroot\_framework\BlazorCrud.Models.dll.gz
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\bin\Debug\net6.0\wwwroot\_framework\BlazorCrud.Models.pdb.gz
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\bin\Debug\net6.0\BlazorCrud.Models.dll
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\bin\Debug\net6.0\BlazorCrud.Models.pdb
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\obj\Debug\net6.0\build-gz\sC4fzAbP.gz
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.WEB\obj\Debug\net6.0\build-gz\wLIRFrj3.gz

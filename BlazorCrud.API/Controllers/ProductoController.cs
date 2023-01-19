@@ -3,7 +3,6 @@ using BlazorCrud.API.Dtos;
 using BlazorCrud.API.Models;
 using BlazorCrud.API.Repositorio.Interfaces;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorCrud.API.Controllers
@@ -83,9 +82,9 @@ namespace BlazorCrud.API.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> ActualizarProducto(int idProducto, ProductoCreacionDto productoCreacionDto)
+        public async Task<ActionResult> ActualizarProducto(int id, ProductoCreacionDto productoCreacionDto)
         {
-            var producto = await _repoProducto.GetProducto(idProducto);
+            var producto = await _repoProducto.GetProducto(id);
             if(producto == null)
             {
                 BadRequest("No existe el producto a actualizar");
@@ -100,10 +99,10 @@ namespace BlazorCrud.API.Controllers
             return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public async Task <ActionResult>EliminarProducto(int idProducto)
+        [HttpDelete("{id:int}")]
+        public async Task <ActionResult>EliminarProducto(int id)
         {
-            var producto = await _repoProducto.GetProducto(idProducto);
+            var producto = await _repoProducto.GetProducto(id);
             if(producto == null)
                 BadRequest("No existe el producto que desea eliminar");
             

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P4vnV6niXee0aktjWFtPTSk1w2CRMx4HBre3yuTlasM=",
+  "Hash": "VQJnVAJFk+LtjZZe6nRnBdqdyDrHCsh5qGE+Hoi8KFY=",
   "Source": "BlazorCrud.WEB",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.9\\build\\net6.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.Models.dll",
+      "SourceId": "BlazorCrud.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorCrud.Models.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.Models\\bin\\Debug\\net6.0\\BlazorCrud.Models.dll"
+    },
+    {
+      "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.Models.pdb",
+      "SourceId": "BlazorCrud.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorCrud.Models.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.Models\\bin\\Debug\\net6.0\\BlazorCrud.Models.pdb"
     },
     {
       "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.WEB.dll",
@@ -6103,6 +6137,23 @@
       "OriginalItemSpec": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Primitives.dll"
     },
     {
+      "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\obj\\Debug\\net6.0\\build-gz\\sC4fzAbP.gz",
+      "SourceId": "BlazorCrud.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorCrud.Models.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.Models.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.Models.dll"
+    },
+    {
       "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\obj\\Debug\\net6.0\\build-gz\\sGIM7dZg.gz",
       "SourceId": "BlazorCrud.WEB",
       "SourceType": "Computed",
@@ -6424,6 +6475,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Numerics.dll"
+    },
+    {
+      "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\obj\\Debug\\net6.0\\build-gz\\wLIRFrj3.gz",
+      "SourceId": "BlazorCrud.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorCrud.Models.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.Models.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorCrud.Models.pdb"
     },
     {
       "Identity": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.WEB\\obj\\Debug\\net6.0\\build-gz\\wP+8oagR.gz",

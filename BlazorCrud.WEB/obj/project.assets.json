@@ -498,6 +498,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "BlazorCrud.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BlazorCrud.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorCrud.Models.dll": {}
+        }
       }
     },
     "net6.0/browser-wasm": {
@@ -990,6 +1000,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "BlazorCrud.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BlazorCrud.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorCrud.Models.dll": {}
         }
       }
     }
@@ -1753,10 +1773,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BlazorCrud.Models/1.0.0": {
+      "type": "project",
+      "path": "../BlazorCrud.Models/BlazorCrud.Models.csproj",
+      "msbuildProject": "../BlazorCrud.Models/BlazorCrud.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BlazorCrud.Models >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.9",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.9"
     ]
@@ -1787,7 +1813,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.Models\\BlazorCrud.Models.csproj": {
+              "projectPath": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.Models\\BlazorCrud.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

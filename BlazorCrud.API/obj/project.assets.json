@@ -1271,6 +1271,16 @@
             "rid": "win"
           }
         }
+      },
+      "BlazorCrud.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BlazorCrud.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorCrud.Models.dll": {}
+        }
       }
     }
   },
@@ -3771,11 +3781,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BlazorCrud.Models/1.0.0": {
+      "type": "project",
+      "path": "../BlazorCrud.Models/BlazorCrud.Models.csproj",
+      "msbuildProject": "../BlazorCrud.Models/BlazorCrud.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
+      "BlazorCrud.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -3807,7 +3823,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.Models\\BlazorCrud.Models.csproj": {
+              "projectPath": "D:\\Repositorios\\BlazorCrud.WEB\\BlazorCrud.Models\\BlazorCrud.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -82,3 +82,5 @@ D:\Repositorios\BlazorCrud.WEB\BlazorCrud.API\obj\Debug\net6.0\BlazorCrud.API.ge
 D:\Repositorios\BlazorCrud.WEB\BlazorCrud.API\obj\Debug\net6.0\ref\BlazorCrud.API.dll
 D:\Repositorios\BlazorCrud.WEB\BlazorCrud.API\bin\Debug\net6.0\AutoMapper.dll
 D:\Repositorios\BlazorCrud.WEB\BlazorCrud.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.API\bin\Debug\net6.0\BlazorCrud.Models.dll
+D:\Repositorios\BlazorCrud.WEB\BlazorCrud.API\bin\Debug\net6.0\BlazorCrud.Models.pdb

@@ -1,0 +1,38 @@
+﻿@page "/"
+@inherits ListaProductosBase
+
+<div class="col-md-9">
+	<h4 class="mb-2">Lista de Productos</h4>
+	<a href="AgregarProducto" class="btn btn-primary m-1">Crear Producto</a>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Marca</th>
+				<th>Descripcion</th>
+				<th>Categoria</th>
+				<th>Precio</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+		@foreach (var item in _products)
+		{
+			<tr>
+				<td>@item.Marca</td>
+				<td>@item.Descripcion</td>
+				<td>@item.NombreCategoria</td>
+				<td>@item.Precio</td>
+				<td>
+					<button class="btn btn-sm btn-warning">Editar
+					</button>
+					<button 
+						class = "btn btn-sm btn-danger"
+							@onclick=@(() => EliminarProducto(item.IdProducto))>
+							Eliminar
+					</button>
+				</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+</div>
